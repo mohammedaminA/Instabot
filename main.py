@@ -11,9 +11,9 @@ webdriver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
 sleep(3)
 
 username = webdriver.find_element_by_name('username')
-username.send_keys('mahisultann')
+username.send_keys('')
 password = webdriver.find_element_by_name('password')
-password.send_keys('Aziza123')
+password.send_keys('')
 
 button_login = webdriver.find_element_by_css_selector('#loginForm > div > div:nth-child(3) > button')
 button_login.click()
@@ -26,6 +26,7 @@ sleep(3)
 notnow = webdriver.find_element_by_css_selector('body > div.RnEpo.Yx5HN > div > div > div > div.mt3GC > button.aOOlW.HoLwm')
 notnow.click() #comment these last 2 lines out, if you don't get a pop up asking about notifications
 
+#feel free to use any hashtags you'd like
 hashtag_list = ['twentyonepilots', 'python', 'toolmusic']
 prev_user_list = []
 #prev_user_list = pd.read_csv('20181203-224633_users_followed_list.csv', delimiter=',').iloc[:,
